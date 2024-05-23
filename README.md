@@ -36,7 +36,7 @@ Este projeto utiliza o dataset da Olist para responder a várias questões de ne
 - `sellers`
 
 ### 3. Consultas SQL
-Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`](queries/queries.sql). Abaixo estão algumas das principais consultas realizadas:
+Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`(olist_sql_queries/queries.sql). Abaixo estão algumas das principais consultas realizadas:
 
 ### Qual o produto mais vendido?
 
