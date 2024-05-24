@@ -4,8 +4,7 @@
 Este projeto utiliza o dataset da Olist para responder a várias questões de negócio usando consultas SQL no SQLite. Todas as operações foram realizadas utilizando o DBeaver, uma ferramenta gráfica para gestão de bancos de dados.
 
 ## Estrutura do Projeto
-- `data/`: Contém os arquivos CSV do dataset da Olist.
-- `database/`: Contém o banco de dados SQLite após os dados serem carregados.
+- `data/`: Os arquivos CSV do dataset da Olist estão disponíveis na pasta data.
 - `queries/`: Contém o arquivo com todas as consultas SQL.
 - `README.md`: Documentação do projeto.
 
@@ -36,50 +35,8 @@ Este projeto utiliza o dataset da Olist para responder a várias questões de ne
 - `sellers`
 
 ### 3. Consultas SQL
-Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`](olist_sql_queries/queries.sql). Abaixo estão algumas das principais consultas realizadas:
+Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`](olist_sql_queries/queries.sql).
 
-### Qual o produto mais vendido?
+**Agradeço pela visita, e que você fique a vontade para entrar em contato comigo em minhas redes.**
 
-SELECT 
-    p.product_id,
-    p.product_category_name,
-    COUNT(oi.product_id) AS total_sold
-FROM 
-    order_items oi
-JOIN 
-    products p ON oi.product_id = p.product_id
-GROUP BY 
-    p.product_id, p.product_category_name
-ORDER BY 
-    total_sold DESC
-LIMIT 1;
-
-SELECT *
-FROM order_items oi RIGHT JOIN products p ON (oi.order_id = p.product_id)  
-
-
-### Qual a receita mensal?
-
-SELECT 
-	SUM(price) AS total_revenue,
-	strftime ('%Y-%m', o.order_purchase_timestamp) AS year_month
-FROM
-	order_items oi INNER JOIN orders o ON oi.order_id = o.order_id
-GROUP BY 
-	year_month
-ORDER BY 
-	year_month DESC
-	
-	
-### Quais estados têm os clientes mais fiéis?
-	
-SELECT
-	customer_state,
-	COUNT (o.order_id) AS qty_orders
-FROM
-	orders o INNER JOIN customer c ON o.customer_id = c.customer_id
-GROUP BY 
-	customer_state
-ORDER BY 
-	qty_orders DESC 
-   
+**Muito obrigado!** 
