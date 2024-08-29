@@ -38,7 +38,7 @@ Este projeto utiliza o dataset da Olist para responder a várias questões de ne
 Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`]((https://github.com/ramosvinicius/olist_sql_project/blob/main/queries.sql)).
 
 ### 4. Relatório Power BI
-O arquivo do relatório em Power BI se encontra em  [`olist_sql_queries/relatorio.pbix`]. Aqui você encontra tudo o que eu fiz para essa base de dados.
+O arquivo do relatório em Power BI se encontra em  `olist_sql_queries/relatorio.pbix`. Aqui você encontra tudo o que eu fiz para essa base de dados.
 
 **Agradeço pela visita, e que você fique a vontade para entrar em contato comigo em minhas redes.**
 
