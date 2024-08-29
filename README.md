@@ -35,7 +35,7 @@ Este projeto utiliza o dataset da Olist para responder a várias questões de ne
 - `sellers`
 
 ### 3. Consultas SQL
-Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`](olist_sql_queries/queries.sql).
+Todas as consultas SQL estão localizadas no arquivo [`olist_sql_queries/queries.sql`]((https://github.com/ramosvinicius/olist_sql_project/blob/main/queries.sql)).
 
 **Agradeço pela visita, e que você fique a vontade para entrar em contato comigo em minhas redes.**
 
